@@ -18,7 +18,7 @@ import argparse
 import batman
 
 ###############################################################################################################
-########################################## SET UP COMMAND LIND FLAGS ##########################################
+########################################## SET UP COMMAND LINE FLAGS ##########################################
 ###############################################################################################################
 parser = argparse.ArgumentParser()
 
@@ -151,7 +151,7 @@ def get_semester_windows(start_of_semester, end_of_semester, planet, n_test = 10
 	end_of_semester: astropy Time object
 		astropy time object corresponding to end of semester
 	planet: astroplan object
-		planed defined in astroplanet
+		planet defined in astroplanet
 
 	Returns
 	----------
@@ -200,8 +200,6 @@ def get_observable_transit_windows(start_of_semester, end_of_semester, planet, s
 def check_window_flexibility(observable_windows, flexibility, site, star, max_airmass):
 	"""
 	Take in the observable windows, then check if there's space to add flexibility before/after the window.
-
-	THERE IS PROBABLY A BETTER WAY TO DO THIS...REWRITE IT LATER...
 	"""
 
 	flexible_windows = []
