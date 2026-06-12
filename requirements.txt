@@ -1,0 +1,6 @@
+astroplan
+astroquery
+astropy
+matplotlib
+numpy
+batman-package
